@@ -97,7 +97,23 @@
 	\end{frame}
 
 	\begin{frame}{马氏链中的环流}
-		\begin{block}{环擦除定义下的环流}
+		\begin{block}{环擦除定义下的环}
+			\begin{table}[htb!]
+				\renewcommand\arraystretch{1}\centering
+				\begin{tabular}{cccccccccc} \hline\hline
+			   $n$            & 0 & 1 & 2 & 3   & 4     & 5 & 6 & 7         & 8 \\ \hline
+			   $\xi_n$         & 1 & 2 & 3 & 3   & 2     & 3 & 4 & 1         & 4 \\ \hline
+			   $\tilde{\xi}_n$& {[}1{]} & {[}1,2{]} & {[}1,2,3{]} & {[}1,2,3{]} & {[}1,2{]} & {[}1,2,3{]} & {[}1,2,3,4{]} & {[}1{]} & {[}1,4{]} \\ \hline
+				\text{形成的环} &   &   &   & (3) & (2,3) &   &   & (1,2,3,4) &   \\ \hline\hline
+				\end{tabular}
+				\caption{导出链的变化过程和轨道中形成的环}\label{trajectory}
+			\end{table}
+		\end{block}
+
+	\end{frame}
+
+	\begin{frame}{马氏链中的环流}
+		\begin{block}{生成树定义下的环}
 			
 			
 		\end{block}
@@ -105,15 +121,7 @@
 	\end{frame}
 
 	\begin{frame}{马氏链中的环流}
-		\begin{block}{生成树定义下的环流}
-
-			
-		\end{block}
-		
-	\end{frame}
-
-	\begin{frame}{马氏链中的环流}
-		\begin{block}{两种类型环流的比较}
+		\begin{block}{两种类型环的比较}
 
 			
 		\end{block}
@@ -246,36 +254,36 @@
 		\end{block}
 	\end{frame}
 
-	\begin{frame}{主要难点}
-		给定一个图$G^n(k)$，考虑图中遍历所有边的欧拉回路，并计算出每种环出现的数量 $k=(k_c)_{c \in \mathcal{C}_{\infty}}$的欧拉回路数量 $\mathcal{E} (G^n(k))$。
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.2]{graph1.png}
-			\caption*{马氏链诱导出的图}
-		\end{figure}
-	\end{frame}
+	% \begin{frame}{主要难点}
+	% 	给定一个图$G^n(k)$，考虑图中遍历所有边的欧拉回路，并计算出每种环出现的数量 $k=(k_c)_{c \in \mathcal{C}_{\infty}}$的欧拉回路数量 $\mathcal{E} (G^n(k))$。
+	% 	\begin{figure}[h]
+	% 		\centering
+	% 		\includegraphics[scale=0.2]{graph1.png}
+	% 		\caption*{马氏链诱导出的图}
+	% 	\end{figure}
+	% \end{frame}
 
-	\begin{frame}{难点简化}
-		针对酶动力学模型，下图所示的马氏链
-		\begin{figure}[h] \label{fi}
-			\centering
-			\includegraphics[scale=0.3]{n-state2.png}
-			\caption*{m状态马氏链诱导出的图}
-		\end{figure}
-		可以得出符合要求的欧拉回路数量：
-		\tiny{
-		\begin{align*}
-			\mathcal{E}_1 (G^m(k)) &= 
-			\binom{k_{12}+k_{1m}+k^{+}+k^{-}}{k_{12}, k_{1m}, k^{+}, k^{-}} 
-			\binom{k_{1}+k_{12}+k_{1m}+k^{+}+k^{-}}{k_{12}+k_{1m}+k^{+}+k^{-}}
-			\biggl[\Pi_{i\in S, i\neq 1} \binom{\sum_{c \ni i} k_{c} - 1}{\sum_{c \ni i} k_{c} - k_{i} - 1}\biggr]\\
-			&\biggl[\sum_{k_{23}^{+}+k_{23}^{-}=k_{23}} \sum_{k_{34}^{+}+k_{34}^{-}=k_{34}}
-			\dots \sum_{k_{m-1,m}^{+}+k_{m-1,m}^{-}=k_{m-1,m}}
-			\binom{k_{23}^{+}+k_{12}+k^{+}-1}{k_{23}^{+}} \binom{k_{34}^{+}+k_{23}^{+}+k^{+}-1}{k_{34}^{+}} \\
-			&\dots \binom{k_{m-1, m}^{+}+ k^{+}_{m-2, m-1} + k^{+}  -1}{k_{m-1, m}^{+}} \binom{k_{1, m} + k_{m-1, m}^{-} + k^{-} -1}{k_{m-1, m}^{-}} \binom{k_{m-1, m}^{-} + k_{m-2, m-1}^{-} + k^{-} - 1}{k_{m-2, m-1}^{-}} \\
-			&\dots \binom{k_{23}^{-} + k_{34}^{-} + k^{-} - 1}{k_{23}^{-}}\biggr]
-		\end{align*}}
-	\end{frame}
+	% \begin{frame}{难点简化}
+	% 	针对酶动力学模型，下图所示的马氏链
+	% 	\begin{figure}[h] \label{fi}
+	% 		\centering
+	% 		\includegraphics[scale=0.3]{n-state2.png}
+	% 		\caption*{m状态马氏链诱导出的图}
+	% 	\end{figure}
+	% 	可以得出符合要求的欧拉回路数量：
+	% 	\tiny{
+	% 	\begin{align*}
+	% 		\mathcal{E}_1 (G^m(k)) &= 
+	% 		\binom{k_{12}+k_{1m}+k^{+}+k^{-}}{k_{12}, k_{1m}, k^{+}, k^{-}} 
+	% 		\binom{k_{1}+k_{12}+k_{1m}+k^{+}+k^{-}}{k_{12}+k_{1m}+k^{+}+k^{-}}
+	% 		\biggl[\Pi_{i\in S, i\neq 1} \binom{\sum_{c \ni i} k_{c} - 1}{\sum_{c \ni i} k_{c} - k_{i} - 1}\biggr]\\
+	% 		&\biggl[\sum_{k_{23}^{+}+k_{23}^{-}=k_{23}} \sum_{k_{34}^{+}+k_{34}^{-}=k_{34}}
+	% 		\dots \sum_{k_{m-1,m}^{+}+k_{m-1,m}^{-}=k_{m-1,m}}
+	% 		\binom{k_{23}^{+}+k_{12}+k^{+}-1}{k_{23}^{+}} \binom{k_{34}^{+}+k_{23}^{+}+k^{+}-1}{k_{34}^{+}} \\
+	% 		&\dots \binom{k_{m-1, m}^{+}+ k^{+}_{m-2, m-1} + k^{+}  -1}{k_{m-1, m}^{+}} \binom{k_{1, m} + k_{m-1, m}^{-} + k^{-} -1}{k_{m-1, m}^{-}} \binom{k_{m-1, m}^{-} + k_{m-2, m-1}^{-} + k^{-} - 1}{k_{m-2, m-1}^{-}} \\
+	% 		&\dots \binom{k_{23}^{-} + k_{34}^{-} + k^{-} - 1}{k_{23}^{-}}\biggr]
+	% 	\end{align*}}
+	% \end{frame}
 
 	\begin{frame}{速率函数}
 		对于三状态马氏链，环流大偏差速率函数：
