@@ -88,24 +88,21 @@
 	\begin{frame}{马氏链中的环流}
 		\begin{block}{为什么研究上述马氏链中的环？}
 			考虑上述马氏链中，若环 $E \rightarrow EP \rightarrow ES \rightarrow E$ 出现的频率大于环 $E \rightarrow ES \rightarrow EP \rightarrow E$ 出现的频率，则化学反应整体向正反应进行，否则向负反应进行。
-
 			通过研究马氏链中每个环出现的频率，可以研究化学反应整体方向以及反应进程。
 		\end{block}
-		% \begin{block}{是否可使用环表示上述马氏过程？}
-		% 	考虑马氏链 $(\mathit{X}_i)_{i\in \mathbb{N}}$ 前 $n$ 步，并且令 $\mathit{X}_{i+1} = \mathit{X}_1$，则$\left(X_1, X_2, \dots, X_n, X_{n+1}\right)$ 构成了一个回路，按照环产生的次序，会有一个环的序列 $\{\xi_1, \xi_2, \dots, \xi_j\}$，是否可以用该序列唯一的表示一个马氏链？
-		% \end{block}
 	\end{frame}
 
 	\begin{frame}{马氏链中的环流}
 		\begin{block}{环擦除定义下的环}
 			\begin{table}[htb!]
-				\renewcommand\arraystretch{1}\centering
+				\renewcommand \arraystretch{1} \centering
+				\scalebox{0.7}{
 				\begin{tabular}{cccccccccc} \hline\hline
 			   $n$            & 0 & 1 & 2 & 3   & 4     & 5 & 6 & 7         & 8 \\ \hline
 			   $\xi_n$         & 1 & 2 & 3 & 3   & 2     & 3 & 4 & 1         & 4 \\ \hline
 			   $\tilde{\xi}_n$& {[}1{]} & {[}1,2{]} & {[}1,2,3{]} & {[}1,2,3{]} & {[}1,2{]} & {[}1,2,3{]} & {[}1,2,3,4{]} & {[}1{]} & {[}1,4{]} \\ \hline
 				\text{形成的环} &   &   &   & (3) & (2,3) &   &   & (1,2,3,4) &   \\ \hline\hline
-				\end{tabular}
+				\end{tabular}}
 				\caption{导出链的变化过程和轨道中形成的环}\label{trajectory}
 			\end{table}
 		\end{block}
@@ -114,7 +111,7 @@
 
 	\begin{frame}{马氏链中的环流}
 		\begin{block}{生成树定义下的环}
-			
+
 			
 		\end{block}
 		
