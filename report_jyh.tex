@@ -528,29 +528,58 @@
 \end{frame}
 
 \begin{frame}{环流的涨落定理}{单环马氏链LE环流的涨落定理}
+	\begin{block}{强对称关系}
+		单环马氏链LE环流满足强对称关系，即：
+		\begin{align} 
+			&\;k^+ \mathbb{P}\left(N^+_n=k^+,N^-_n=k^- -1,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)\\
+			=&\; \left(\frac{\gamma^+}{\gamma^-}\right)\mathbb{P}\left(N^+_n=k^+ -1,N^-_n=k^-,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)
+		\end{align}
+		该式中 $C^+ = (1,2,\cdots,N)$ 和 $C^- = (1,N,\cdots,2)$ 表示单环系统中两个 N 元环，$N^+_n$ 和 $N^-_n$ 分别表示 n 时刻环  $C^+$ 和 $C^-$ 分别形成的数量。并且 $\gamma^+ = p_{12}p_{23}\cdots p_{N1}$ 和 $\gamma^- = p_{1N}p_{N,N-1}\cdots p_{21}$ 分别是环 $C^+$ 和环 $C^-$中的转移概率的乘积。
+	\end{block}
+\end{frame}
 
-	
+\begin{frame}{环流的涨落定理}{单环马氏链LE环流的涨落定理}
+	LE环流满足的各种涨落定理
+	\begin{itemize}
+		\item 暂态涨落定理:
+		\begin{equation*}\label{theorem:transient fluatuation}
+			\mathbb{P}\left(N^+_n=k^+,N^-_n=k^-,\cdots\right)
+			= \mathbb{P}\left(N^+_n=k^-,N^-_n=k^+,\cdots\right)\left(\frac{\gamma^+}{\gamma^-}\right)^{k^+-k^-}.
+		\end{equation*}
+		
+		\item Kurchan-Lebowitz-Spohn 类型涨落定理:
+		\begin{equation*}
+			g_n(\lambda^+,\lambda^-,\cdots)
+			= g_n\left(\lambda^--\log\frac{\gamma^+}{\gamma^-},
+			\lambda^++\log\frac{\gamma^+}{\gamma^-},\cdots\right),
+		\end{equation*}
+		
+		\item Gallavotti-Cohen 类型涨落定理:
+		\begin{equation*}
+			I_J(\cdots,\nu^+,\nu^-)=I_J(\cdots,\nu^-,\nu^+)-\left(\log\frac{\gamma^+}{\gamma^-}\right)(\nu^+-\nu^-).
+		\end{equation*}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{环流的涨落定理}{单环马氏链LE环流的涨落定理}
 	LE净环流满足的各种涨落定理
 	\begin{itemize}
-		\item 暂态涨落定理:
+		\item 暂态涨落定理:		
 		\begin{equation*}
 		\frac{\mathbb{P}(\tilde{J}^+_n=x)}{\mathbb{P}(\tilde{J}^+_n=-x)}
 		= \left(\frac{\gamma^+}{\gamma^-}\right)^{nx}.
 		\end{equation*}
-		
+
 		\item Kurchan-Lebowitz-Spohn 类型涨落定理:
 		\begin{equation*}
 		\tilde{g}_n(\lambda)=\tilde{g}_n\left(-\left(\lambda+\log\frac{\gamma^+}{\gamma^-}\right)\right).
 		\end{equation*}
-		
-		\item 积分涨落定理 : 取 $\lambda = -\log \gamma^+/\gamma^-$ 带入上面方程可得
+
+		\item 积分涨落定理 : 
 		\begin{equation*}
 		\mathbb{E}\left[e^{\lambda n\tilde{J}^+_n}\right]=1.
 		\end{equation*}
-		
+
 		\item Gallavotti-Cohen 类型涨落定理:
 		\begin{equation*}
 		\tilde{I}_J(x)=\tilde{I}_J(-x)-\left(\log\frac{\gamma^+}{\gamma^-}\right)x.
@@ -558,6 +587,14 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{环流的涨落定理}{一般马氏链LE环流的涨落定理}
+	\begin{block}{相似环}
+		记 $c_1=(i_1,i_2,\cdots,i_s)$ 和 $c_2=(j_1,j_2,\cdots,j_r)$ 是两个环。如果 $s=r$ 且 $\{i_1,i_2,\cdots,i_s\}=\{j_1,j_2,\cdots,j_r\}$，则称环 $c_1$ 和环 $c_2$ 相似。因此，下面六个环 
+		$$(1,2,3,4), (1,2,4,3), (1,3,2,4), (1,3,4,2), (1,4,2,3), (1,4,3,2)$$
+		互为相似关系。
+	\end{block}
+	
+\end{frame}
 
 
 
