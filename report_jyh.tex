@@ -525,9 +525,9 @@
 \begin{frame}{环流的涨落定理}{单环马氏链LE环流的涨落定理}
 	\begin{block}{强对称关系}
 		单环马氏链LE环流满足强对称关系，即：
-		\begin{align} 
-			&\;k^+ \mathbb{P}\left(N^+_n=k^+,N^-_n=k^- -1,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)\\
-			=&\; \left(\frac{\gamma^+}{\gamma^-}\right)\mathbb{P}\left(N^+_n=k^+ -1,N^-_n=k^-,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)
+		\begin{align}
+			  & \;k^+ \mathbb{P}\left(N^+_n=k^+,N^-_n=k^- -1,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)                                    \\
+			= & \; \left(\frac{\gamma^+}{\gamma^-}\right)\mathbb{P}\left(N^+_n=k^+ -1,N^-_n=k^-,N^c_n=k^c,\;\forall c\neq C^+,C^-\right)
 		\end{align}
 		该式中 $C^+ = (1,2,\cdots,N)$ 和 $C^- = (1,N,\cdots,2)$ 表示单环系统中两个 N 元环，$N^+_n$ 和 $N^-_n$ 分别表示 n 时刻环  $C^+$ 和 $C^-$ 分别形成的数量。并且 $\gamma^+ = p_{12}p_{23}\cdots p_{N1}$ 和 $\gamma^- = p_{1N}p_{N,N-1}\cdots p_{21}$ 分别是环 $C^+$ 和环 $C^-$中的转移概率的乘积。
 	\end{block}
@@ -537,54 +537,54 @@
 	LE环流满足的各种涨落定理
 	\begin{itemize}
 		\item 暂态涨落定理:
-		\begin{equation*}\label{theorem:transient fluatuation}
-			\mathbb{P}\left(N^+_n=k^+,N^-_n=k^-,\cdots\right)
-			= \mathbb{P}\left(N^+_n=k^-,N^-_n=k^+,\cdots\right)\left(\frac{\gamma^+}{\gamma^-}\right)^{k^+-k^-}.
-		\end{equation*}
-		
+		      \begin{equation*}\label{theorem:transient fluatuation}
+			      \mathbb{P}\left(N^+_n=k^+,N^-_n=k^-,\cdots\right)
+			      = \mathbb{P}\left(N^+_n=k^-,N^-_n=k^+,\cdots\right)\left(\frac{\gamma^+}{\gamma^-}\right)^{k^+-k^-}.
+		      \end{equation*}
+
 		\item Kurchan-Lebowitz-Spohn 类型涨落定理:
-		\begin{equation*}
-			g_n(\lambda^+,\lambda^-,\cdots)
-			= g_n\left(\lambda^--\log\frac{\gamma^+}{\gamma^-},
-			\lambda^++\log\frac{\gamma^+}{\gamma^-},\cdots\right),
-		\end{equation*}
-		
+		      \begin{equation*}
+			      g_n(\lambda^+,\lambda^-,\cdots)
+			      = g_n\left(\lambda^--\log\frac{\gamma^+}{\gamma^-},
+			      \lambda^++\log\frac{\gamma^+}{\gamma^-},\cdots\right),
+		      \end{equation*}
+
 		\item Gallavotti-Cohen 类型涨落定理:
-		\begin{equation*}
-			I_J(\cdots,\nu^+,\nu^-)=I_J(\cdots,\nu^-,\nu^+)-\left(\log\frac{\gamma^+}{\gamma^-}\right)(\nu^+-\nu^-).
-		\end{equation*}
+		      \begin{equation*}
+			      I_J(\cdots,\nu^+,\nu^-)=I_J(\cdots,\nu^-,\nu^+)-\left(\log\frac{\gamma^+}{\gamma^-}\right)(\nu^+-\nu^-).
+		      \end{equation*}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{环流的涨落定理}{单环马氏链LE环流的涨落定理}
 	LE净环流满足的各种涨落定理
 	\begin{itemize}
-		\item 暂态涨落定理:		
-		\begin{equation*}
-		\frac{\mathbb{P}(\tilde{J}^+_n=x)}{\mathbb{P}(\tilde{J}^+_n=-x)}
-		= \left(\frac{\gamma^+}{\gamma^-}\right)^{nx}.
-		\end{equation*}
+		\item 暂态涨落定理:
+		      \begin{equation*}
+			      \frac{\mathbb{P}(\tilde{J}^+_n=x)}{\mathbb{P}(\tilde{J}^+_n=-x)}
+			      = \left(\frac{\gamma^+}{\gamma^-}\right)^{nx}.
+		      \end{equation*}
 
 		\item Kurchan-Lebowitz-Spohn 类型涨落定理:
-		\begin{equation*}
-		\tilde{g}_n(\lambda)=\tilde{g}_n\left(-\left(\lambda+\log\frac{\gamma^+}{\gamma^-}\right)\right).
-		\end{equation*}
+		      \begin{equation*}
+			      \tilde{g}_n(\lambda)=\tilde{g}_n\left(-\left(\lambda+\log\frac{\gamma^+}{\gamma^-}\right)\right).
+		      \end{equation*}
 
-		\item 积分涨落定理 : 
-		\begin{equation*}
-		\mathbb{E}\left[e^{\lambda n\tilde{J}^+_n}\right]=1.
-		\end{equation*}
+		\item 积分涨落定理 :
+		      \begin{equation*}
+			      \mathbb{E}\left[e^{\lambda n\tilde{J}^+_n}\right]=1.
+		      \end{equation*}
 
 		\item Gallavotti-Cohen 类型涨落定理:
-		\begin{equation*}
-		\tilde{I}_J(x)=\tilde{I}_J(-x)-\left(\log\frac{\gamma^+}{\gamma^-}\right)x.
-		\end{equation*}
+		      \begin{equation*}
+			      \tilde{I}_J(x)=\tilde{I}_J(-x)-\left(\log\frac{\gamma^+}{\gamma^-}\right)x.
+		      \end{equation*}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{环流的涨落定理}{一般马氏链LE环流的涨落定理}
 	\begin{block}{相似环}
-		记 $c_1=(i_1,i_2,\cdots,i_s)$ 和 $c_2=(j_1,j_2,\cdots,j_r)$ 是两个环。如果 $s=r$ 且 $\{i_1,i_2,\cdots,i_s\}=\{j_1,j_2,\cdots,j_r\}$，则称环 $c_1$ 和环 $c_2$ 相似。因此，下面六个环 
+		记 $c_1=(i_1,i_2,\cdots,i_s)$ 和 $c_2=(j_1,j_2,\cdots,j_r)$ 是两个环。如果 $s=r$ 且 $\{i_1,i_2,\cdots,i_s\}=\{j_1,j_2,\cdots,j_r\}$，则称环 $c_1$ 和环 $c_2$ 相似。因此，下面六个环
 		$(1,2,3,4), (1,2,4,3), (1,3,2,4), (1,3,4,2), (1,4,2,3), (1,4,3,2)$
 		互为相似关系。
 	\end{block}
@@ -612,7 +612,7 @@
 			{\Pnum(N^{c_1}_n=k^{c_2},N^{c_2}_n=k^{c_1},N^{c}_n=k^{c},\;\forall c\neq c_1,c_2)}
 			= \left(\frac{\gamma^{c_1}}{\gamma^{c_t}}\right)^{k^{c_1}-k^{c_2}}.
 		\end{equation}
-		
+
 	\end{block}
 \end{frame}
 
@@ -620,15 +620,15 @@
 	\begin{block}{一般马氏链LE环流的暂态涨落定理}
 		进一步得到LE净环流的暂态涨落定理（强形式）：
 		\begin{align*} \label{strong}
-			&\Pnum(\tilde{J}^{c_1}_n=x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)\\
-			&= \Pnum(\tilde{J}^{c_1}_n=-x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)e^{nx_s\log\frac{\gamma^{c_1}}{\gamma^{c_1-}}}.
+			 & \Pnum(\tilde{J}^{c_1}_n=x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)                                                   \\
+			 & = \Pnum(\tilde{J}^{c_1}_n=-x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)e^{nx_s\log\frac{\gamma^{c_1}}{\gamma^{c_1-}}}.
 		\end{align*}
 		这表明对于任意环$c_i$，LE经验净环流满足对称关系。在方程 \ref{strong} 中，对所有$1\le i \le r$，交换$x_i$和$-x_i$的值，可以得到（弱形式）：
 		\begin{equation}\label{weak1}
 			\begin{split}
-			\frac{\Pnum\left(\tilde{J}^{c_1}_n=x_1,\tilde{J}^{c_2}_n=x_2,\cdots,\tilde{J}^{c_{r}}_n=x_{r}\right)}
-			{\Pnum\left(\tilde{J}^{c_1}_n=-x_1,\tilde{J}^{c_2}_n=-x_2,\cdots,\tilde{J}^{c_{r}}_n=-x_{r}\right)}
-			=e^{n\sum_{i=1}^{r}x_i\log\frac{\gamma^{c_i}}{\gamma^{c_i-}}}.
+				\frac{\Pnum\left(\tilde{J}^{c_1}_n=x_1,\tilde{J}^{c_2}_n=x_2,\cdots,\tilde{J}^{c_{r}}_n=x_{r}\right)}
+				{\Pnum\left(\tilde{J}^{c_1}_n=-x_1,\tilde{J}^{c_2}_n=-x_2,\cdots,\tilde{J}^{c_{r}}_n=-x_{r}\right)}
+				=e^{n\sum_{i=1}^{r}x_i\log\frac{\gamma^{c_i}}{\gamma^{c_i-}}}.
 			\end{split}
 		\end{equation}
 	\end{block}
@@ -655,8 +655,8 @@
 		\end{figure}
 		{\tiny 该图(a)说明了 $I_Q(\cdots,\mu^+,\mu^-)$和$I_Q(\cdots,\mu^-,\mu^+)-\log(\gamma^+ /\gamma^-) (\mu^+-\mu^-)$之间的差异，因此有：
 		\begin{equation*}
-		I_Q(\cdots,\mu^+,\mu^-)
-		\neq I_Q(\cdots,\mu^-,\mu^+)-\left(\log\frac{\gamma^+}{\gamma^-}\right)(\mu^+-\mu^-),
+			I_Q(\cdots,\mu^+,\mu^-)
+			\neq I_Q(\cdots,\mu^-,\mu^+)-\left(\log\frac{\gamma^+}{\gamma^-}\right)(\mu^+-\mu^-),
 		\end{equation*}
 		这说明了 Gallavotti-Cohen 类型涨落定理对于ST环流不成立。由于Gallavotti-Cohen 类型涨落定理成立条件最弱，因此其他类型涨落定理也不成立。}
 	\end{block}
@@ -667,9 +667,9 @@
 		周期边界条件下，ST净环流满足暂态涨落定理的弱形式，即：
 		\begin{equation*}\label{weak2}
 			\begin{split}
-			\frac{\Pnum\left(\tilde{Q}^{c_{l_1}}_n=x_1,\cdots, \tilde{Q}^{c_{l_s}}_n=x_{s}\right)}
-			{\Pnum\left(\tilde{Q}^{c_{l_1}}_n=-x_1,\cdots, \tilde{Q}^{c_{l_s}}_n=-x_{s}\right)}
-			=e^{n\sum_{i=1}^{s}x_i\log\frac{\gamma^{c_{l_i}}}{\gamma^{c_{l_i}-}}}.
+				\frac{\Pnum\left(\tilde{Q}^{c_{l_1}}_n=x_1,\cdots, \tilde{Q}^{c_{l_s}}_n=x_{s}\right)}
+				{\Pnum\left(\tilde{Q}^{c_{l_1}}_n=-x_1,\cdots, \tilde{Q}^{c_{l_s}}_n=-x_{s}\right)}
+				=e^{n\sum_{i=1}^{s}x_i\log\frac{\gamma^{c_{l_i}}}{\gamma^{c_{l_i}-}}}.
 			\end{split}
 		\end{equation*}
 		上图中(b)说明了 $I_{\tilde{Q}}(x_1, x_2, x_3)$ 和 $ I_{\tilde{Q}}(-x_1, x_2, x_3) -\left(\log \gamma^{c_1} / \gamma^{c_1-}\right)\tilde{\mu}^{c_1}$之间的差异，因此：
@@ -681,19 +681,19 @@
 \end{frame}
 
 \begin{frame}{总结和展望}
-主要工作
-\begin{itemize}
-	\item 建立 LE 环流的大偏差原理
-  	\item 单环马氏链中LE经验环流的速率大偏差函数的表达式
-	\item 一般马氏系统的经验ST环流的速率函数的表达式
- 	\item LE （净）环流是否满足的各种涨落定理
-  	\item ST （净）环流是否满足的各种涨落定理
-\end{itemize}
-未来展望
-\begin{itemize}
-	\item 大偏差速率函数的结果是否可以推广到一般马氏链模型
-	  \item 除 LE 和ST 环流，其他类型环流是否满足涨落定理
-\end{itemize}
+	主要工作
+	\begin{itemize}
+		\item 建立 LE 环流的大偏差原理
+		\item 单环马氏链中LE经验环流的速率大偏差函数的表达式
+		\item 一般马氏系统的经验ST环流的速率函数的表达式
+		\item LE （净）环流是否满足的各种涨落定理
+		\item ST （净）环流是否满足的各种涨落定理
+	\end{itemize}
+	未来展望
+	\begin{itemize}
+		\item 大偏差速率函数的结果是否可以推广到一般马氏链模型
+		\item 除 LE 和ST 环流，其他类型环流是否满足涨落定理
+	\end{itemize}
 \end{frame}
 
 
