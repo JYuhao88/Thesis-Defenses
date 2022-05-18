@@ -546,7 +546,10 @@
 		      \begin{equation*}
 			      g_n(\lambda^+,\lambda^-,\cdots)
 			      = g_n\left(\lambda^--\log\frac{\gamma^+}{\gamma^-},
-			      \lambda^++\log\frac{\gamma^+}{\gamma^-},\cdots\right),
+			      \lambda^++\log\frac{\gamma^+}{\gamma^-},\cdots\right), 
+				%   ~~~~
+				%   g_n(\lambda^+,\lambda^-,\cdots)
+				%   = \mathbb{E}\left[e^{\lambda^+N^+_n+\lambda^-N^-_n+\sum_{c\neq C^+,C^-}\lambda^cN^c_n}\right].
 		      \end{equation*}
 
 		\item Gallavotti-Cohen 类型涨落定理:
@@ -569,7 +572,6 @@
 		      \begin{equation*}
 			      \tilde{g}_n(\lambda)=\tilde{g}_n\left(-\left(\lambda+\log\frac{\gamma^+}{\gamma^-}\right)\right).
 		      \end{equation*}
-
 		\item 积分涨落定理 :
 		      \begin{equation*}
 			      \mathbb{E}\left[e^{\lambda n\tilde{J}^+_n}\right]=1.
@@ -619,18 +621,18 @@
 \begin{frame}{环流的涨落定理}{一般马氏链LE环流的涨落定理}
 	\begin{block}{一般马氏链LE环流的暂态涨落定理}
 		进一步得到LE净环流的暂态涨落定理（强形式）：
-		\begin{align*} \label{strong}
+		\begin{align*}
 			 & \Pnum(\tilde{J}^{c_1}_n=x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)                                                   \\
 			 & = \Pnum(\tilde{J}^{c_1}_n=-x_s,\tilde{J}^{c_m}_n=x_m,\;\forall 2\le m \le r)e^{nx_s\log\frac{\gamma^{c_1}}{\gamma^{c_1-}}}.
 		\end{align*}
-		这表明对于任意环$c_i$，LE经验净环流满足对称关系。在方程 \ref{strong} 中，对所有$1\le i \le r$，交换$x_i$和$-x_i$的值，可以得到（弱形式）：
-		\begin{equation}\label{weak1}
+		这表明对于任意环$c_i$，LE经验净环流满足对称关系。在该方程中，对所有$1\le i \le r$，交换$x_i$和$-x_i$的值，可以得到（弱形式）：
+		\begin{equation*}\label{weak1}
 			\begin{split}
 				\frac{\Pnum\left(\tilde{J}^{c_1}_n=x_1,\tilde{J}^{c_2}_n=x_2,\cdots,\tilde{J}^{c_{r}}_n=x_{r}\right)}
 				{\Pnum\left(\tilde{J}^{c_1}_n=-x_1,\tilde{J}^{c_2}_n=-x_2,\cdots,\tilde{J}^{c_{r}}_n=-x_{r}\right)}
 				=e^{n\sum_{i=1}^{r}x_i\log\frac{\gamma^{c_i}}{\gamma^{c_i-}}}.
 			\end{split}
-		\end{equation}
+		\end{equation*}
 	\end{block}
 \end{frame}
 
