@@ -39,7 +39,7 @@
 \author{姜瑜浩}
 
 \institute[CSRC]
-{\normalsize 指导老师：贾晨 教授\\
+{\normalsize 指导老师：贾晨 ~特聘研究员\\
 % \medskip
 北京计算科学研究中心
 % \textit{yuhaojiang@csrc.ac.cn}
@@ -201,7 +201,7 @@
 		\end{align*}
 	\end{block}
 	\begin{block}{ST环流}
-		记$Q^{c_l}_n$表示单位时间通过弦 $l$ 的次数，ST弦和弦是一一对应关系，因此可以用通过弦 $l$ 的次数定义 $c_l$ 形成的次数。 $c_l$ 在 $n$ 时刻的经验环流为：
+		记$Q^{c_l}_n$表示单位时间通过弦 $l$ 的次数，ST环流和弦是一一对应关系，因此可以用通过弦 $l$ 的次数定义 $c_l$ 形成的次数。 $c_l$ 在 $n$ 时刻的经验环流为：
 		\begin{align*}
 			Q^{c_l}_n & = \frac{1}{n}\sum_{i=1}^n1_{\{\langle\xi_{i-1},\xi_i\rangle=l\}}
 			% \\ \tilde{Q}^{c_l}_n &= Q^{c_l}_n-Q^{c_l-}_n.
@@ -270,13 +270,13 @@
 		\begin{itemize}
 			\item 对于$\forall \alpha \geqslant 0$，水平集$\{x \in \mathcal{V}: I_{J}(x) \leqslant \alpha\}$是紧的。
 			\item 对于任意开集$U \subset \mathcal{V}$,
-			      \begin{equation}\label{def1}
+			      \begin{equation*}\label{def1}
 				      \varliminf_{n\to\infty}\frac{1}{n}\log\mathbb{P}((J^c_n)_{c\in\mathcal{C}}\in U)\ge-\inf_{x\in U}I_J(x).
-			      \end{equation}
+			      \end{equation*}
 			\item 对于任意闭集$F \subset \mathcal{V}$,
-			      \begin{equation}\label{def2}
+			      \begin{equation*}\label{def2}
 				      \varlimsup_{n\to \infty}\frac{1}{n}\log\mathbb{P}((J^c_n)_{c\in\mathcal{C}}\in F)\le -\inf_{x\in F}I_J(x).
-			      \end{equation}
+			      \end{equation*}
 		\end{itemize}
 	\end{block}
 \end{frame}
